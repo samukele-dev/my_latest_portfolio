@@ -3,7 +3,7 @@
   publish = "./staticfiles/"
 
 [build.environment]
-  DJANGO_SETTINGS_MODULE = "yourprojectname.settings.production"
+  DJANGO_SETTINGS_MODULE = "my_resume.settings.production"
 
 [[plugins]]
   package = "netlify-plugin-cache-next-deploys"
