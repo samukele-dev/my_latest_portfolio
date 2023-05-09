@@ -25,7 +25,7 @@ db_path = os.path.join(BASE_DIR, 'db.sqlite3')
 SECRET_KEY = 'django-insecure-s2q7yu4r=*@db)s03qpm2dpabgr8!*7ycv876asxi))zpxalty'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['.vercel.app']
 
