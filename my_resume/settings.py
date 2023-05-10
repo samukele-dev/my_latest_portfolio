@@ -25,7 +25,7 @@ db_path = os.path.join(BASE_DIR, 'db.sqlite3')
 SECRET_KEY = 'django-insecure-s2q7yu4r=*@db)s03qpm2dpabgr8!*7ycv876asxi))zpxalty'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -79,12 +79,12 @@ WSGI_APPLICATION = 'my_resume.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
 
 
 # Password validation
@@ -128,10 +128,11 @@ STATICFILES_DIR = [
 ]
 
 STATIC_URL = '/static/'
+STATIC_ROOT = Path(BASE_DIR) / "staticfiles"
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
-MEDIA_URLS ='/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = "/media/"
+
+MEDIA_ROOT = Path(BASE_DIR) / "mediafiles"
 
 
 APPEND_SLASH = False
