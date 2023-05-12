@@ -1,0 +1,21 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "your-project-name"
+version = "0.1.0"
+description = "This is a portfolio to showcase my projects, The portfolio was created using python, Javascript & Django frameworks"
+authors = ["samukele <samukele107@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+django = "^3.2.4"
+# Add other dependencies as needed
+
+[tool.poetry.dev-dependencies]
+# Add development dependencies if required
+
+[build-system.heroku]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
