@@ -6,7 +6,6 @@ Pillow==9.5.0
 sqlparse==0.4.4
 tzdata==2023.3
 ansiwrap==0.8.4
-asgiref==3.6.0
 attrs==22.2.0
 backcall==0.2.0
 beautifulsoup4==4.11.2
@@ -55,7 +54,6 @@ parso==0.8.3
 pathlib==1.0.1
 pbr==5.11.1
 pickleshare==0.7.5
-Pillow==9.4.0
 platformdirs==3.1.0
 prometheus-client==0.16.0
 prompt-toolkit==3.0.38
