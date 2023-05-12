@@ -1,3 +1,0 @@
-[build-system]
-requires = ["python>=3.11.3"]
-build-backend = "poetry.masonry.api"
