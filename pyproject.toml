@@ -3,7 +3,7 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "your-project-name"
+name = "my-1-portfolio"
 version = "0.1.0"
 description = "This is a portfolio to showcase my projects, The portfolio was created using python, Javascript & Django frameworks"
 authors = ["samukele <samukele107@gmail.com>"]
