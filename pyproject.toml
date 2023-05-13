@@ -12,7 +12,7 @@ authors = ["samukele <samukele107@gmail.com>"]
 python = "^3.9"
 django = "^3.2.4"
 # Add other dependencies as needed
-dj_database_url = "^3.0.0"
+dj_database_url = "*"
 
 [tool.poetry.dev-dependencies]
 # Add development dependencies if required
