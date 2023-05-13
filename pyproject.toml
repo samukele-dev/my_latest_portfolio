@@ -16,6 +16,7 @@ dj_database_url = "*"
 
 [tool.poetry.dev-dependencies]
 # Add development dependencies if required
+allow-unsafe = true
 ansiwrap = {version = "0.8.4", hashes = ["sha256:7b053567c88e1ad9eed030d3ac41b722125e4c1271c8a99ade797faff1f49fb1"]}
 
 
