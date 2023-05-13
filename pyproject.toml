@@ -16,6 +16,8 @@ dj_database_url = "*"
 
 [tool.poetry.dev-dependencies]
 # Add development dependencies if required
+ansiwrap = {version = "0.8.4", hashes = ["sha256:7b053567c88e1ad9eed030d3ac41b722125e4c1271c8a99ade797faff1f49fb1"]}
+
 
 [build-system.heroku]
 requires = ["poetry-core>=1.0.0"]
