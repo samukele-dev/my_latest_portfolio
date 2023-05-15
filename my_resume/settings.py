@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
-import dj_database_url
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -87,7 +86,7 @@ DATABASES = {
         'NAME': 'my_portfolio_db',
         'USER': 'Samukele',
         'PASSWORD': 'Samukele1997',
-        'HOST': 'localhost',  # Typically 'localhost' for local development
+        'HOST': '127.1.1.1',  # Typically 'localhost' for local development
         'PORT': '3306',  # Typically '3306'
     }
 }
