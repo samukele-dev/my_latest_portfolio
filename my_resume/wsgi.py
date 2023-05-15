@@ -15,3 +15,21 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'my_resume.settings')
 
 application = get_wsgi_application()
 
+
+version: 1
+services:
+  - name: web
+    env:
+      - key: DJANGO_SETTINGS_MODULE
+        value: "my_resume.settings"
+      - key: RENDER_SERVICE_ENVIRONMENT
+        value: "python"
+    buildCommand:
+      - pip install -r requirements.txt
+      - python manage.py migrate
+    startCommand: gunicorn my_resume.wsgi --bind 0.0.0.0:8000
+    healthCheckPath: /admin/
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: mysql
