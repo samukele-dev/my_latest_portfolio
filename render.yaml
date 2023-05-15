@@ -6,7 +6,7 @@ services:
         value: "my_portfolio.settings"
     buildCommand: "python manage.py collectstatic --noinput"
     startCommand: "gunicorn my_portfolio.wsgi:application --bind 0.0.0.0:$PORT --workers 4"
-    healthCheckPath: "/admin/"
+    healthCheckPath: "/"
 
 databases:
   - name: mysql
