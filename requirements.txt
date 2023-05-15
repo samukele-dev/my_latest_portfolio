@@ -10,7 +10,7 @@ colorama==0.4.6
 crashtest==0.4.1
 distlib==0.3.6
 Django==3.2.19
-django-ckeditor==6.5.1
+django-ckeditor==6.3.2
 django-js-asset==2.0.0
 dulwich==0.21.5
 filelock==3.12.0
