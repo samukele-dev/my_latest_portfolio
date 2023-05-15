@@ -92,9 +92,9 @@ DATABASES = {
     }
 }
 
-DATABASES = {
-    'default': dj_database_url.config(default='mysql://<Samukele>:<Samukele1997>@<localhost>:<3306>/<my_portfolio_db>')
-}
+#DATABASES = {
+#    'default': dj_database_url.config(default='mysql://<Samukele>:<Samukele1997>@localhost:3306/<my_portfolio_db>')
+#}
 
 
 # Password validation
