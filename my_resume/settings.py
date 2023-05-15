@@ -86,7 +86,7 @@ DATABASES = {
         'NAME': 'my_portfolio_db',
         'USER': 'root',
         'PASSWORD': 'Samukele1997',
-        'HOST': '127.1.1.1',  # Typically 'localhost' for local development
+        'HOST': '127.0.0.1',  # Typically 'localhost' for local development
         'PORT': '3306',  # Typically '3306'
     }
 }
