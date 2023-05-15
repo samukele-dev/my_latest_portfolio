@@ -1,9 +1,19 @@
 version: 1
 services:
-  - name: django-app
-    type: web
+  - name: web
     env:
-      - key: DATABASE_URL
-        from_secret: db-url
-    buildCommand: python manage.py collectstatic --noinput
-    startCommand: gunicorn my_resume.wsgi --bind 0.0.0.0:8000
+      - key: DJANGO_SETTINGS_MODULE
+        value: "my_portfolio.settings"
+    buildCommand: "python manage.py collectstatic --noinput"
+    startCommand: "gunicorn my_portfolio.wsgi:application --bind 0.0.0.0:$PORT --workers 4"
+    healthCheckPath: "/admin/"
+
+databases:
+  - name: mysql
+    type: mysql
+    disk: 10
+    config:
+      MYSQL_ROOT_PASSWORD: "Samukele1997"
+      MYSQL_USER: "root"
+      MYSQL_PASSWORD: "Samukele1997"
+      MYSQL_DATABASE: "my_portfolio_db"
