@@ -83,8 +83,8 @@ WSGI_APPLICATION = 'my_resume.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'my_portfolio_db',
-        'USER': 'root',
+        'NAME': 'my_portfolio2_db',
+        'USER': 'Samukele',
         'PASSWORD': 'Samukele1997',
         'HOST': '127.0.0.1',
         'PORT': '3306',

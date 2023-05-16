@@ -1,9 +1,20 @@
-version: 1
 services:
   - name: web
     env:
-      - key: DJANGO_SETTINGS_MODULE
-        value: "my_resume.settings"
-    buildCommand: "python manage.py collectstatic --noinput"
-    startCommand: "python manage.py migrate && gunicorn my_resume.wsgi:application --bind 0.0.0.0:$PORT --workers 4"
-    healthCheckPath: "/"
+      - key: SECRET_KEY
+        # Add your Django SECRET_KEY value here
+        value: "django-insecure-s2q7yu4r=*@db)s03qpm2dpabgr8!*7ycv876asxi))zpxalty"
+    build_command: "python manage.py collectstatic --no-input"
+    start_command: "gunicorn my_resume.wsgi --bind 0.0.0.0:$PORT"
+    health_check_path: "/"
+
+databases:
+  - name: my-database
+    type: mysql
+    plan: free
+    config:
+      database: my_portfolio2_db
+      user: Samukele
+      password: Samukele1997
+      host: 127.0.0.1
+      port: 3306
