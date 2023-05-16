@@ -10,11 +10,11 @@ services:
 
 databases:
   - name: my-database
-    type: mysql
+    type: postgresql
     plan: free
     config:
       database: portfolio_db_wzx2
       user: samukele
       password: QRh3PQmPIWO0v87YrOOpKr78cPhOiuwM
-      host: dpg-chhkpmrhp8ufj5upvpb0-a
+      host: dpg-chhkpmrhp8ufj5upvpb0-a  # Replace with your PostgreSQL host
       port: 5432
