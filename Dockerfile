@@ -1,12 +1,17 @@
-FROM python:3.9
+WORKDIR /var/lib/mysql
 
-ENV PYTHONUNBUFFERED 1
+# Set environment variables
+ENV MYSQL_ROOT_PASSWORD=root
+ENV MYSQL_DATABASE=my_portfolio_db
+ENV MYSQL_USER=root
+ENV MYSQL_PASSWORD=Samukele1997
 
-WORKDIR /app
+# Make MySQL listen on all interfaces
+RUN echo "[mysqld]" >> /etc/mysql/my.cnf
+RUN echo "bind-address = 127.0.0.1" >> /etc/mysql/my.cnf
 
-COPY requirements.txt /app/
-RUN pip install -r requirements.txt
+# Expose port 3306
+EXPOSE 3306
 
-COPY . /app/
-
-CMD ["gunicorn", "my_resume.wsgi:application", "--bind", "0.0.0.0:$PORT", "--workers", "4"]
+# Run mysqld
+CMD ["mysqld"]
