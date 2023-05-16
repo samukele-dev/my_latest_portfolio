@@ -83,11 +83,11 @@ WSGI_APPLICATION = 'my_resume.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'my_portfolio2_db',
-        'USER': 'Samukele',
-        'PASSWORD': 'Samukele1997',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
+        'NAME': 'portfolio_db_wzx2',
+        'USER': 'samukele',
+        'PASSWORD': 'QRh3PQmPIWO0v87YrOOpKr78cPhOiuwM',
+        'HOST': 'dpg-chhkpmrhp8ufj5upvpb0-a.oregon-postgres.render.com',
+        'PORT': '5432',
     }
 }
 

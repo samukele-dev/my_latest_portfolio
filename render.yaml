@@ -13,8 +13,8 @@ databases:
     type: mysql
     plan: free
     config:
-      database: my_portfolio2_db
-      user: Samukele
-      password: Samukele1997
-      host: 127.0.0.1
-      port: 3306
+      database: portfolio_db_wzx2
+      user: samukele
+      password: QRh3PQmPIWO0v87YrOOpKr78cPhOiuwM
+      host: dpg-chhkpmrhp8ufj5upvpb0-a
+      port: 5432
