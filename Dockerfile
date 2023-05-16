@@ -3,7 +3,7 @@ WORKDIR /var/lib/mysql
 # Set environment variables
 ENV MYSQL_ROOT_PASSWORD=root
 ENV MYSQL_DATABASE=my_portfolio_db
-ENV MYSQL_USER=root
+ENV MYSQL_USER=Samukele
 ENV MYSQL_PASSWORD=Samukele1997
 
 # Make MySQL listen on all interfaces
