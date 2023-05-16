@@ -15,4 +15,6 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'my_resume.settings')
 
 application = get_wsgi_application()
 
+app = application
+
 
