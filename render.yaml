@@ -3,7 +3,7 @@ services:
   - name: web
     env:
       - key: DJANGO_SETTINGS_MODULE
-        value: "my_portfolio.settings"
+        value: "my_resume.settings"
     buildCommand: "python manage.py collectstatic --noinput"
-    startCommand: "python manage.py migrate && gunicorn my_portfolio.wsgi:application --bind 0.0.0.0:$PORT --workers 4"
+    startCommand: "python manage.py migrate && gunicorn my_resume.wsgi:application --bind 0.0.0.0:$PORT --workers 4"
     healthCheckPath: "/"

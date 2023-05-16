@@ -9,4 +9,4 @@ RUN pip install -r requirements.txt
 
 COPY . /app/
 
-CMD ["gunicorn", "my_portfolio.wsgi:application", "--bind", "0.0.0.0:$PORT", "--workers", "4"]
+CMD ["gunicorn", "my_resume.wsgi:application", "--bind", "0.0.0.0:$PORT", "--workers", "4"]
