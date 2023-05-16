@@ -82,14 +82,14 @@ WSGI_APPLICATION = 'my_resume.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'portfolio_db_wzx2',
         'USER': 'samukele',
         'PASSWORD': 'QRh3PQmPIWO0v87YrOOpKr78cPhOiuwM',
         'HOST': 'dpg-chhkpmrhp8ufj5upvpb0-a.oregon-postgres.render.com',
-        'PORT': '5432',
     }
 }
+
 
 #DATABASES = {
 #    'default': dj_database_url.config(default='mysql://<Samukele>:<Samukele1997>@localhost:3306/<my_portfolio_db>')
