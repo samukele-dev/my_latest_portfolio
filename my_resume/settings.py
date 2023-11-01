@@ -83,10 +83,10 @@ WSGI_APPLICATION = 'my_resume.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'portfolio_db_wzx2',
+        'NAME': 'portfolio_db_kvn0',
         'USER': 'samukele',
-        'PASSWORD': 'QRh3PQmPIWO0v87YrOOpKr78cPhOiuwM',
-        'HOST': 'dpg-chhkpmrhp8ufj5upvpb0-a.oregon-postgres.render.com',
+        'PASSWORD': '0JJNdr4thkKRrwNGW2dvk08hdERVJ1Aq',
+        'HOST': 'dpg-cl149nas1bgc73ei26s0-a.oregon-postgres.render.com',
     }
 }
 
