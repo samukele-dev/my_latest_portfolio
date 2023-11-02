@@ -13,8 +13,8 @@ databases:
     type: postgresql
     plan: free
     config:
-      database: portfolio_db_kvn0
+      database: portfolio_db_blj4
       user: samukele
-      password: 0JJNdr4thkKRrwNGW2dvk08hdERVJ1Aq
-      host: dpg-cl149nas1bgc73ei26s0-a  # Replace with your PostgreSQL host
+      password: 1y7asvhdJCZNdGOMmE6zNhzo0krw8fgf
+      host: dpg-cl1kng8p2gis73fbk99g-a  # Replace with your PostgreSQL host
       port: 5432
